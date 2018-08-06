@@ -1,0 +1,13 @@
+rawfile,maps/_load.gsc
+rawfile,maps/_loadout.gsc
+rawfile,pix/_main.gsc
+rawfile,bindings.cfg
+menufile,ui/playerprofile.menu
+menufile,ui/difficulty.menu
+menufile,ui/levels.menu
+menufile,ui/levels_test.menu
+menufile,ui/mission_select/missiondefs.menu
+
+
+
+

@@ -1,0 +1,35 @@
+#include "ui/menudef.h"
+#include "ui_mp/common_macro.inc"
+
+#define CHOICE_X_START			45
+#define CHOICE_Y_START			72
+
+#define CHOICE_SEP_OFFSET_Y		-2
+#define CHOICE_Y_COUNT			11
+#define CHOICE_GROUP			"levels"
+
+#include "ui_mp/menustyle.inc"
+
+#undef CHOICE_SIZE_X
+#define CHOICE_SIZE_X			220
+#define CHOICE_X_SPACING		280
+#include "ui/choices_setup_common.menu"
+
+#include "ui/choices_setup_levels.menu"
+
+{
+	menuDef
+	{
+		LEVELS_CHOICES_SETUP( levels_test )
+
+		#include "ui/background_main_blurred.menu"
+
+		CHOICE_MENU_TITLE( "TEST LEVELS" )
+
+		CHOICE_BUTTON( 1, "vehicledamage (03-13-07)", exec "spdevmap vehicledamage" )
+		CHOICE_BUTTON( 2, "Bog_a (03-06-07)", exec "spdevmap bog_a" )
+		CHOICE_BUTTON( 3, "Firing Range: Assault Rifles (03-20-07)", exec "spdevmap firingrange_assaultrifles" )
+		CHOICE_BUTTON( 4, "test", exec "spdevmap test" )
+		CHOICE_BUTTON( 5, "test_traverses", exec "spdevmap test_traverses" )
+	}
+}
